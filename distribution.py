@@ -36,3 +36,12 @@ Notice about this example:
   in the text and they are listed in the output in alphabetical order.
 * Letters that do not occur in the text are not listed in the output at all.
 """
+
+lowercase = "abcdefghijklmnopqrstuvwxyz"
+
+str1 = input("Please enter a string of text (the bigger the better): ")
+print ('The distribution of characters in "{0}" is:'.format(str1))
+
+for n in lowercase:
+    charnum = str1.count(n)
+    print (charnum)
