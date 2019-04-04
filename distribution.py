@@ -36,20 +36,19 @@ Notice about this example:
   in the text and they are listed in the output in alphabetical order.
 * Letters that do not occur in the text are not listed in the output at all.
 """
-
-
 lowercase = "abcdefghijklmnopqrstuvwxyz"
 
 str1 = input("Please enter a string of text (the bigger the better): ")
 print ('The distribution of characters in "{0}" is:'.format(str1))
+str1.lower()
 
 for n in lowercase:
     charnum = str1.count(n)
-    print (charnum)
     if charnum == 0:
         pass
     else:
         letternum = ""
-        for x in range(1, charnum):
+        for x in range(charnum):
             letternum += n
     print(letternum)
+    letternum = ""
