@@ -41,6 +41,7 @@ lowercase = "abcdefghijklmnopqrstuvwxyz"
 str1 = input("Please enter a string of text (the bigger the better): ")
 print ('The distribution of characters in "{0}" is:'.format(str1))
 str1.lower()
+list1 = []
 
 for n in lowercase:
     charnum = str1.count(n)
@@ -48,7 +49,9 @@ for n in lowercase:
         pass
     else:
         letternum = ""
-        for x in range(charnum):
+        for x in range(1, (charnum+1)):
             letternum += n
-    print(letternum)
-    letternum = ""
+    if charnum == 0:
+        pass
+    else:
+        list1.append(letternum)
