@@ -55,13 +55,18 @@ for n in lowercase:
         pass
     else:
         list1.append(letternum)
-print(list1)
 
 def compare(a, b):
     """
     compare - generic comparison function for testing two elements.
     """
-    return b > a
+    
+    if len(b) == len(a):
+        result = b > a
+    else:
+        result = len(b) < len(a)
+    
+    return result
     
 def bsort(seq, cmp):
     """
