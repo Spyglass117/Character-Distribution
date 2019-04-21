@@ -62,10 +62,7 @@ def compare(a, b):
     compare - generic comparison function for testing two elements.
     """
     return b > a
-
-for n in list1:
     
-
 def bsort(seq, cmp):
     """
     bsort - simple sorting algorithm that uses any comparison function
