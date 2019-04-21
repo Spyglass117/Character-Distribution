@@ -40,7 +40,7 @@ lowercase = "abcdefghijklmnopqrstuvwxyz"
 
 str1 = input("Please enter a string of text (the bigger the better): ")
 print ('The distribution of characters in "{0}" is:'.format(str1))
-str1.lower()
+str1 = str1.lower()
 list1 = []
 
 for n in lowercase:
@@ -85,4 +85,5 @@ def bsort(seq, cmp):
 
     
 bsort(list1, compare)
-print(list1)
+for n in list1:
+    print(n)
